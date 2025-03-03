@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <svg height="400" width="450" xmlns="http://www.w3.org/2000/svg">
+        <!-- Draw the paths -->
+        <path id="lineAC" d="M 0 300 l 200 0" stroke="red" stroke-width="4" />
+        <path id="lineCE" d="M 200 300 l 200 -300" stroke="red" stroke-width="4" />
+        <path id="lineAB" d="M 0 300 l 100 0" stroke="blue" stroke-width="4" fill="none" />
+        <path id="lineBD" d="M 100 300 q 100 0 200 -150" stroke="blue" stroke-width="4" fill="none" />
+        <path id="lineDE" d="M 300 150 l 100 -150" stroke="blue" stroke-width="4" fill="none" />
+
+        <!-- Mark relevant points -->
+        <g stroke="white" stroke-width="3" fill="white">
+            <circle id="pointA" cx="0" cy="300" r="4" />
+            <circle id="pointB" cx="100" cy="300" r="4" />
+            <circle id="pointC" cx="200" cy="300" r="4" />
+            <circle id="pointD" cx="300" cy="150" r="4" />
+            <circle id="pointE" cx="400" cy="0" r="4" />
+        </g>
+
+        <!-- Label the points -->
+        <g font-size="30" font-family="sans-serif" fill="green" text-anchor="middle">
+            <text x="0" y="300" dy="40" dx="20">A</text>
+            <text x="100" y="300" dy="40">B</text>
+            <text x="200" y="300" dy="40">C</text>
+            <text x="300" y="300" dy="40">D</text>
+            <text x="400" y="300" dy="40">E</text>
+            <text x="500" y="300" dy="40">F</text>
+        </g>
+    </svg>
+</body>
+
+</html>
